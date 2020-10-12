@@ -20,3 +20,6 @@ Coming Improvements:
 - Exceptions and Errors messages handling
 - Send generated passwords by email
 - Linux and Mac Support
+
+
+
