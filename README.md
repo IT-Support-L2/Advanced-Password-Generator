@@ -1,8 +1,8 @@
 # Advanced-Password-Generator
 Advanced Password Generator
 
-Developed using Python 3.8.5 on VS Code
-Compiled using auto-py-to-exe 2.7.8
+- Developed using Python 3.8.5 on VS Code
+- Compiled using auto-py-to-exe 2.7.8
 
 Compiled binary works only on Windows. Successfully tested on Windows 10 pro.
 
