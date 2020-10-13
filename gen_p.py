@@ -26,6 +26,7 @@ passNum = IntVar()
 
 
 def randompassword():
+  while int(passLen.get()) >= 8 and int(passNum.get()) >= 1:
 
     uchars = int(passLen.get() / 4)
 
