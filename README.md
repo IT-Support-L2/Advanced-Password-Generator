@@ -12,7 +12,7 @@ P-GEN generates for you secure complex passwords composed of uppercase and lower
 
 Chars length must be a multiple of 4. Example of length inputs: 8 (minimum), 12, 16, 20, 24, 30, ect.
 
-Else, you can generate passwords as much as you need.
+Else, you can generate passwords as much as you need, minimum input is 1.
 
 
 Coming Improvements: 
