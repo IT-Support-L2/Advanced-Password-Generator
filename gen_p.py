@@ -21,11 +21,12 @@ alignstr = '%dx%d+%d+%d' % (width, height, (screenwidth - width) / 2, (screenhei
 root.geometry(alignstr)
 root.resizable(width=False, height=False)
 
+
 passLen = IntVar()
 passNum = IntVar()
 
-
 def randompassword():
+
   while int(passLen.get()) >= 8 and int(passNum.get()) >= 1:
 
     uchars = int(passLen.get() / 4)
@@ -61,7 +62,7 @@ def randompassword():
     result = ''.join(l)
 
     return str(result)
-    
+
 def output():
   n = 0
   while n < passNum.get():
@@ -73,6 +74,7 @@ def copy():
     field_value = generated_pass.get("1.0", 'end-1c')  
     copy_pass.clipboard_clear() 
     copy_pass.clipboard_append(field_value)
+    copy_pass.update()
 
 def clearr():
     generated_pass.delete('1.0', END)
@@ -92,10 +94,9 @@ def save():
     f.close()
 
 
-
 title_bar=tk.Label(root)
 title_bar["bg"] = "#393d49"
-ft = tkFont.Font(family='Times',size=18)
+ft = tkFont.Font(family='Arial',size=18)
 title_bar["font"] = ft
 title_bar["fg"] = "#33ed3f"
 title_bar["justify"] = "center"
@@ -105,16 +106,16 @@ title_bar.place(x=0,y=0,width=600,height=31)
 
 description=tk.Label(root)
 description["borderwidth"] = "3px"
-ft = tkFont.Font(family='Times',size=10)
+ft = tkFont.Font(family='Arial',size=10)
 description["font"] = ft
 description["fg"] = "#333333"
 description["justify"] = "left"
 description["text"] = "P-GEN generates for you secure complex passwords composed of" + "\n" + "uppercase and lowercase letters, digits and punctuations." + "\n" + "Chars length must be a multiple of 4." + "\n" + "Example of length inputs: 8 (minimum), 12, 16, 20, 24, 30, ect." + "\n" + "Else, you can generate passwords as much as you need, minimum input is 1."
 description["relief"] = "raised"
-description.place(x=60,y=50,width=482,height=94)
+description.place(x=60,y=45,width=490,height=98)
 
 enter_chars=tk.Label(root)
-ft = tkFont.Font(family='Times',size=10)
+ft = tkFont.Font(family='Arial',size=10)
 enter_chars["font"] = ft
 enter_chars["fg"] = "#333333"
 enter_chars["justify"] = "left"
@@ -122,20 +123,22 @@ enter_chars["text"] = "Chars Length"
 enter_chars["relief"] = "groove"
 enter_chars.place(x=20,y=160,width=142,height=30)
 
+
 pass_length=tk.Entry(root)
 pass_length["bg"] = "#d2f4d4"
 pass_length["borderwidth"] = "3px"
-ft = tkFont.Font(family='Times',size=10)
+ft = tkFont.Font(family='Arial',size=10)
 pass_length["font"] = ft
 pass_length["fg"] = "#333333"
 pass_length["justify"] = "center"
-pass_length["text"] = "Entry"
+pass_length["text"] = ""
 pass_length["relief"] = "sunken"
 pass_length.place(x=220,y=160,width=142,height=30)
 pass_length["textvariable"] = passLen
 
+
 enter_passN=tk.Label(root)
-ft = tkFont.Font(family='Times',size=10)
+ft = tkFont.Font(family='Arial',size=10)
 enter_passN["font"] = ft
 enter_passN["fg"] = "#333333"
 enter_passN["justify"] = "left"
@@ -143,14 +146,15 @@ enter_passN["text"] = "Passwords Number"
 enter_passN["relief"] = "groove"
 enter_passN.place(x=20,y=210,width=142,height=30)
 
+
 pass_num=tk.Entry(root)
 pass_num["bg"] = "#d2f4d4"
 pass_num["borderwidth"] = "3px"
-ft = tkFont.Font(family='Times',size=10)
+ft = tkFont.Font(family='Arial',size=10)
 pass_num["font"] = ft
 pass_num["fg"] = "#333333"
 pass_num["justify"] = "center"
-pass_num["text"] = "Entry"
+pass_num["text"] = ""
 pass_num["relief"] = "sunken"
 pass_num.place(x=220,y=210,width=142,height=30)
 pass_num["textvariable"] = passNum
@@ -158,7 +162,7 @@ pass_num["textvariable"] = passNum
 gen_pass=tk.Button(root)
 gen_pass["activebackground"] = "#7ff14e"
 gen_pass["bg"] = "#efefef"
-ft = tkFont.Font(family='Times',size=10)
+ft = tkFont.Font(family='Arial',size=10)
 gen_pass["font"] = ft
 gen_pass["fg"] = "#000000"
 gen_pass["justify"] = "center"
@@ -170,7 +174,7 @@ gen_pass["command"] = output
 generated_pass=tk.Text(root)
 generated_pass["bg"] = "#d2f4d4"
 generated_pass["borderwidth"] = "3px"
-ft = tkFont.Font(family='Times',size=10)
+ft = tkFont.Font(family='Arial',size=10)
 generated_pass["font"] = ft
 generated_pass["fg"] = "#333333"
 generated_pass["relief"] = "sunken"
@@ -179,7 +183,7 @@ generated_pass.place(x=220,y=270,width=346,height=192)
 copy_pass=tk.Button(root)
 copy_pass["activebackground"] = "#7ff14e"
 copy_pass["bg"] = "#efefef"
-ft = tkFont.Font(family='Times',size=10)
+ft = tkFont.Font(family='Arial',size=10)
 copy_pass["font"] = ft
 copy_pass["fg"] = "#000000"
 copy_pass["justify"] = "center"
@@ -192,7 +196,7 @@ copy_pass["command"] = copy
 export=tk.Button(root)
 export["activebackground"] = "#7ff14e"
 export["bg"] = "#efefef"
-ft = tkFont.Font(family='Times',size=10)
+ft = tkFont.Font(family='Arial',size=10)
 export["font"] = ft
 export["fg"] = "#000000"
 export["justify"] = "center"
@@ -205,7 +209,7 @@ export["command"] = lambda : save()
 linkedin=tk.Button(root)
 linkedin["activebackground"] = "#7ff14e"
 linkedin["bg"] = "#efefef"
-ft = tkFont.Font(family='Times',size=10)
+ft = tkFont.Font(family='Arial',size=10)
 linkedin["font"] = ft
 linkedin["fg"] = "#000000"
 linkedin["justify"] = "center"
@@ -217,7 +221,7 @@ linkedin["command"] = linked_in
 github=tk.Button(root)
 github["activebackground"] = "#7ff14e"
 github["bg"] = "#efefef"
-ft = tkFont.Font(family='Times',size=10)
+ft = tkFont.Font(family='Arial',size=10)
 github["font"] = ft
 github["fg"] = "#000000"
 github["justify"] = "center"
@@ -229,7 +233,7 @@ github["command"] = git_hub
 cleaar=tk.Button(root)
 cleaar["activebackground"] = "#7ff14e"
 cleaar["bg"] = "#efefef"
-ft = tkFont.Font(family='Times',size=10)
+ft = tkFont.Font(family='Arial',size=10)
 cleaar["font"] = ft
 cleaar["fg"] = "#000000"
 cleaar["justify"] = "center"
@@ -240,7 +244,7 @@ cleaar["command"] = clearr
 
 foo_ter=tk.Label(root)
 foo_ter["bg"] = "#393d49"
-ft = tkFont.Font(family='Times',size=10)
+ft = tkFont.Font(family='Arial',size=10)
 foo_ter["font"] = ft
 foo_ter["fg"] = "#33ed3f"
 foo_ter["justify"] = "center"
