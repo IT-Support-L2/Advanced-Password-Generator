@@ -29,6 +29,8 @@ def randompassword():
 
   while int(passLen.get()) >= 8 and int(passNum.get()) >= 1:
 
+    punc = "!#($%&*+}-/<=)>?@[\]^{|"
+
     uchars = int(passLen.get() / 4)
 
     lchars = int(passLen.get() / 4)
@@ -49,7 +51,7 @@ def randompassword():
         str_uchars += random.SystemRandom().choice(string.digits)
 
     for i in range(schars):
-        str_uchars += random.SystemRandom().choice(string.punctuation)
+        str_uchars += random.SystemRandom().choice(punc)
 
     random_str = str_uchars + str_lchars + str_dchars + str_schars
 
