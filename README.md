@@ -2,6 +2,7 @@
 Advanced Password Generator
 
 - Developed using Python 3.8.5 and tkinter
+- auto-py-to-exe is the best actual exe compiler https://pypi.org/project/auto-py-to-exe/ , use it to compile the current code.
 
 
 P-GEN generates secure complex passwords composed of uppercase and lowercase letters, digits and punctuations.
