@@ -112,7 +112,7 @@ ft = tkFont.Font(family='Arial',size=10)
 description["font"] = ft
 description["fg"] = "#333333"
 description["justify"] = "left"
-description["text"] = "P-GEN generates for you secure complex passwords composed of" + "\n" + "uppercase and lowercase letters, digits and punctuations." + "\n" + "Chars length must be a multiple of 4." + "\n" + "Example of length inputs: 8 (minimum), 12, 16, 20, 24, 30, ect." + "\n" + "Else, you can generate passwords as much as you need, minimum input is 1."
+description["text"] = "P-GEN generates secure complex passwords composed of" + "\n" + "uppercase and lowercase letters, digits and punctuations." + "\n" + "Chars length must be a multiple of 4." + "\n" + "Example of length inputs: 8 (minimum), 12, 16, 20, 24, 30, ect." + "\n" + "Else, you can generate passwords as much as you need, minimum input is 1."
 description["relief"] = "raised"
 description.place(x=60,y=45,width=490,height=98)
 
