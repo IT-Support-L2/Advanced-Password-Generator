@@ -2,9 +2,6 @@
 Advanced Password Generator
 
 - Developed using Python 3.8.5 and tkinter
-- Compiled using auto-py-to-exe 2.7.8
-
-Compiled binary works only on Windows. Successfully tested on Windows 10 pro.
 
 
 P-GEN generates secure complex passwords composed of uppercase and lowercase letters, digits and punctuations.
@@ -17,7 +14,7 @@ Else, you can generate passwords as much as you need, minimum input is 1.
 Coming Improvements: 
 
 - Desgin improvement
-- While the software is tested and it's bugless, I am going to implement Exceptions and Errors pop-up messages as on-screen informative explanation.
+- While the software is tested and it's buggless, I am going to implement Exceptions and Errors pop-up messages as on-screen informative explanation.
 
 
 
