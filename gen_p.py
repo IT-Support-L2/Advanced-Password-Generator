@@ -77,9 +77,11 @@ def copy():
     copy_pass.clipboard_clear() 
     copy_pass.clipboard_append(field_value)
     copy_pass.update()
+    messagebox.showinfo('P-GEN', 'Copied')
 
 def clearr():
     generated_pass.delete('1.0', END)
+    messagebox.showinfo('P-GEN', 'Cleared')
 
 def linked_in():
     url='https://linkedin.com/in/cyber-services'
