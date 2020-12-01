@@ -14,8 +14,7 @@ Else, you can generate passwords as much as you need, minimum input is 1.
 
 Coming Improvements: 
 
-- Desgin improvement
-- While the software is tested and it's buggless, I am going to implement Exceptions and Errors pop-up messages as on-screen informative explanation.
+- Error messages
 
 
 
