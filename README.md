@@ -19,6 +19,6 @@ Coming Improvements:
 
 
 
-![p-gen.gif](https://github.com/IT-Support-L2/Advanced-Password-Generator/blob/main/P-GEN%20(2).gif)
+![p-gen.gif](https://github.com/IT-Support-L2/Advanced-Password-Generator/blob/main/pgen.gif)
 
 
